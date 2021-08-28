@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AlumnoNotasModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="TblNotasAlumno">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" />
+    <Property Name="Lab1" Type="float" />
+    <Property Name="Parcial1" Type="float" />
+    <Property Name="Periodo1" Type="float" />
+    <Property Name="Lab2" Type="float" />
+    <Property Name="Parcial2" Type="float" />
+    <Property Name="Periodo2" Type="float" />
+    <Property Name="Lab3" Type="float" />
+    <Property Name="Parcial3" Type="float" />
+    <Property Name="Periodo3" Type="float" />
+    <Property Name="Final" Type="float" />
+  </EntityType>
+  <EntityContainer Name="AlumnoNotasModelStoreContainer">
+    <EntitySet Name="TblNotasAlumno" EntityType="Self.TblNotasAlumno" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

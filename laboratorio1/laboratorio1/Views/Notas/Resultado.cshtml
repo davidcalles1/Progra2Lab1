@@ -1,0 +1,63 @@
+﻿@model laboratorio1.Models.TblNotasAlumno
+@{
+    ViewBag.Title = "Resultado";
+}
+
+<table class="container">
+    <tbody>
+        <tr>
+            <th>NOMBRE:</th>
+            <th>@Model.Nombre</th>
+        </tr>
+        <tr>
+            <th>Laboratorio 1:</th>
+            <th>@Model.Lab1</th>
+        </tr>
+        <tr>
+            <th>Parcial 1:</th>
+            <th>@Model.Parcial1</th>
+        </tr>
+        <tr>
+            <th>Periodo 1:</th>
+            <th>@Model.Periodo1</th>
+        </tr>
+        <tr>
+            <th>Laboratorio 2:</th>
+            <th>@Model.Lab2</th>
+        </tr>
+        <tr>
+            <th>Parcial 2:</th>
+            <th>@Model.Parcial2</th>
+        </tr>
+        <tr>
+            <th>Periodo 2:</th>
+            <th>@Model.Periodo2</th>
+        </tr>
+        <tr>
+            <th>Laboratorio 3:</th>
+            <th>@Model.Lab3</th>
+        </tr>
+        <tr>
+            <th>Parcial 3:</th>
+            <th>@Model.Parcial3</th>
+        </tr>
+        <tr>
+            <th>Periodo 3:</th>
+            <th>@Model.Periodo3</th>
+        </tr>
+        <tr>
+            <th>Final:</th>
+            <th>@Model.Final</th>
+        </tr>
+
+    </tbody>
+</table>
+
+<br />
+<h3>NUEVO REGISTRO</h3>
+@Html.ActionLink("Regresar", "Index", new { }, new { @class = "btn btn-success" })
+<br />
+<br />
+<h3>VER LISTADO</h3>
+@Html.ActionLink("IR", "NotasEstudiante", new { }, new { @class = "btn btn-success" })
+

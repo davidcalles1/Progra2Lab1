@@ -1,0 +1,47 @@
+﻿@model List<laboratorio1.Models.TblNotasAlumno>
+@{
+    ViewBag.Title = "NotasEstudiante";
+}
+
+
+
+<table class="table table-dark table-striped">
+    <thead>
+    <th class="h5">Id:</th>
+    <th class="h5">Nombre estudiante:</th>
+    <th class="h5">Laboratorio 1:</th>
+    <th class="h5">Parcial 1:</th>
+    <th class="h5">Periodo 1:</th>
+    <th class="h5">Laboratorio 2:</th>
+    <th class="h5">Parcial 2:</th>
+    <th class="h5">Periodo 3:</th>
+    <th class="h5">Laboratio 3:</th>
+    <th class="h5">Parical 3:</th>
+    <th class="h5">Periodo 3:</th>
+    <th class="h5">Final:</th>
+    </thead>
+
+
+    <tbody>
+        @foreach (var nota in Model)
+        {
+            <tr>
+                <td>@nota.Id</td>
+                <td>@nota.Nombre</td>
+                <td>@nota.Lab1</td>
+                <td>@nota.Parcial1</td>
+                <td>@nota.Periodo1</td>
+                <td>@nota.Lab2</td>
+                <td>@nota.Parcial2</td>
+                <td>@nota.Periodo2</td>
+                <td>@nota.Lab3</td>
+                <td>@nota.Parcial3</td>
+                <td>@nota.Periodo3</td>
+                <td>@nota.Final</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h3>NUEVO REGISTRO</h3>
+@Html.ActionLink("Agregar", "Index", new { }, new { @class = "btn btn-success" })
